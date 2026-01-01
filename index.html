@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>::MARVELING:: Fun Visit For Avengers</title>
+
+<link href="index.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+<a name="header"></a>
+
+<div id="wrap">
+
+  <div id="hlogo">
+    <img src="images/marveling_logo.jpg" width="110" height="55" alt="MARVELING 로고"/>
+  </div>
+
+  <div id="nav"></div>
+
+  <div id="center1">
+    <img src="images/ct1_2.png" alt="" />
+  </div>
+
+  <div id="bgbk"></div>
+
+  <div id="center2">
+    <div id="center2_1">
+      <a href="sub1.html"><img src="images/PHASE_1.png" width="205" height="207" alt="PHASE 1"/></a>
+    </div>
+    <div id="center2_2">
+      <a href="sub2.html"><img src="images/PHASE_2.png" width="205" height="207" alt="PHASE 2"/></a>
+    </div>
+    <div id="center2_3">
+      <a href="sub3.html"><img src="images/PHASE_3.png" width="205" height="207" alt="PHASE 3"/></a>
+    </div>
+    <div id="center2_4">
+      <img src="images/captain_7.png" width="160" height="236" alt=""/>
+    </div>
+  </div>
+
+  <div id="center3">
+    <img src="images/Layer_8.png" width="826" height="129" alt=""/>
+  </div>
+
+  <div id="hbgc">
+    <img src="images/justlinecolor.png" width="1000" height="8" alt=""/>
+  </div>
+
+  <div id="center3_1">
+    <img src="images/Layer_9.png" width="447" height="136" alt=""/>
+  </div>
+
+  <!-- 영상 영역 -->
+  <div id="center4">
+    <div class="center4_1">
+
+      <div id="center4_if">
+        <iframe
+          id="marvelPlayer"
+          width="643"
+          height="468"
+          src="https://www.youtube.com/embed/Puw6A3d0wbE?enablejsapi=1&mute=1&rel=0&modestbranding=1"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+
+    <div id="center4_2">
+      <img src="images/NKJljnzImgur.gif" width="219" height="125" alt=""/>
+    </div>
+
+    <div id="center4_3">
+      <img src="images/Layer_17.png" width="215" height="321" alt=""/>
+    </div>
+  </div>
+
+  <div id="center5">
+    <img src="images/phase1.png" alt=""/>
+  </div>
+
+  <div id="center5_1">
+    <div id="center5_1_1">
+      <img src="images/ph1_1.jpg" alt=""/>
+      <img src="images/ph1_4.jpg" alt=""/>
+    </div>
+    <div id="center5_1_2">
+      <img src="images/ph1_2.jpg" alt=""/>
+      <img src="images/ph1_5.jpg" alt=""/>
+    </div>
+    <div id="center5_1_3">
+      <img src="images/ph1_3.jpg" alt=""/>
+      <img src="images/ph1_6.jpg" alt=""/>
+    </div>
+  </div>
+
+  <div id="center6">
+    <img src="images/phase2.png" alt=""/>
+  </div>
+
+  <div id="center6_1">
+    <div id="center6_1_1">
+      <img src="images/ph2_1.jpg" alt=""/>
+      <img src="images/ph2_4.jpg" alt=""/>
+    </div>
+    <div id="center6_1_2">
+      <img src="images/ph2_2.jpg" alt=""/>
+      <img src="images/ph2_5.jpg" alt=""/>
+    </div>
+    <div id="center6_1_3">
+      <img src="images/ph2_3.jpg" alt=""/>
+    </div>
+  </div>
+
+  <div id="center7">
+    <img src="images/phase3.png" alt=""/>
+  </div>
+
+  <div id="center7_1">
+    <div id="center7_1_1">
+      <img src="images/ph3_1.jpg" alt=""/>
+      <img src="images/ph3_4.jpg" alt=""/>
+      <img src="images/ph3_7.jpg" alt=""/>
+    </div>
+    <div id="center7_1_2">
+      <img src="images/ph3_2.jpg" alt=""/>
+      <img src="images/ph3_5.jpg" alt=""/>
+      <img src="images/ph3_8.jpg" alt=""/>
+    </div>
+    <div id="center7_1_3">
+      <img src="images/ph3_3.jpg" alt=""/>
+      <img src="images/ph3_6.jpg" alt=""/>
+    </div>
+  </div>
+
+  <div id="footer">
+    <hr>
+    <img src="images/marveling_flogo.jpg" alt="">
+  </div>
+
+</div>
+
+<!-- TOP 버튼 -->
+<div style="position:fixed; bottom:5px; right:5px;">
+  <a href="#header">
+    <img src="images/btn_backtotop.png" width="37" height="37" title="위로가기">
+  </a>
+</div>
+
+<!-- YouTube API + 스크롤 자동 재생/정지 -->
+<script>
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.body.appendChild(tag);
+
+  var player;
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('marvelPlayer');
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (!player) return;
+
+        if (entry.isIntersecting) {
+          player.playVideo();
+        } else {
+          player.pauseVideo();
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  window.addEventListener('load', () => {
+    const iframe = document.getElementById('marvelPlayer');
+    observer.observe(iframe);
+  });
+</script>
+
+</body>
+</html>

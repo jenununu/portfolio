@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* 공통사항 */
+
+*{ margin:0; padding:0;}
+ul, li { list-style-type:none;}
+a { text-decoration:none;}
+body { font:12px/1.5 Gotham, "맑은 고딕", "Helvetica Neue", Helvetica, Arial, sans-serif; color:#000000} /*font 속성을 한꺼번에 담을 때는 순서대로 적용한다. font 크기/줄간격 서체 */
+
+img {border:0;}
+
+/*테스트*/
+.testBorder { border:1px solid red !important;}
+
+/* #wrap:after {content:””; display:block; clear:both;} */
+#wrap {
+	position:relative;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#footer {
+	float:left;
+	width:1000px;
+	height:auto;
+	padding-top:50px
+	
+}
+#footer img {
+	padding-left:400px;
+	width: 200px;
+}
+
+
+
+#nav {
+	background-color: #000000;
+	float: left;
+	height: 50px;
+	width: 1000px;
+}
+#hlogo {
+	height: 55px;
+	width: 110px;
+	position: absolute;
+	left: 8px;
+	top: 17px;
+}
+#center1 {
+	float: left;
+	height: 360px;
+	width: 1000px;
+}
+
+
+
+#bgbk {
+	background-color: #000000;
+	float: left;
+	height: 50px;
+	width: 1000px;
+}
+
+#center2 {
+	float: left;
+	height: 207px;
+	width: 723px;
+	margin-top: 122px;
+	margin-left: 138px;
+	position:relative;
+}
+#center2_1{
+	float: left;
+	height: 207px;
+	width: 205px;
+}
+#center2_2{
+	float: left;
+	height: 207px;
+	width: 205px;
+	margin-left: 50px;
+}
+#center2_3{
+		float: left;
+	height: 207px;
+	width: 205px;
+	margin-left: 50px;
+}
+#center2_4{
+     position: absolute;
+	left: 680px;
+	top: 65px;
+	height: 228px;
+	width: 160px;
+}
+#center3 {
+	float: left;
+	height: 129px;
+	width: 826px;
+	margin-top: 79px;
+	margin-left: 85px;
+}
+#hbgc {
+	float: left;
+	height: 8px;
+	width: 1000px;
+	margin-top: 15px;
+}
+#center3_1{
+position: absolute;
+	left: 298px;
+	top: 962px;
+	height: 136px;
+	width: 443px;
+}
+
+#center4 {
+	float: left;
+	height: 468px;
+	width: 932px;
+	margin-top: 90px;
+	margin-left: 48px;
+}
+.center4_1 {
+		background-color: #000000;
+	float: left;
+	height: 468px;
+	width: 702px;
+}
+#center4_2 {
+	float: left;
+	height: 125px;
+	width: 219px;
+	margin-left: 11px;
+}
+#center4_3 {
+	float: left;
+	height: 321px;
+	width: 215px;
+	margin-top: 22px;
+	margin-left: 13px;
+}
+#center4_if {
+	float: left;
+	height: 468px;
+	width: 643px;
+	margin-left: 30px;
+}
+
+#center5 {
+	float:left;
+	height:432px;
+	width:622px;
+	margin-top:80px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#center5_1 {
+	float:left;
+	width:700px;
+	margin-top:80px;
+	margin-left:150px;
+
+}
+
+#center5_1_1 {
+	float:left;
+	width:200px;
+}
+#center5_1_2 {
+	float:left;
+	width:200px;
+	margin-left:50px;
+}
+#center5_1_3 {
+	float:left;
+	width:200px;
+	margin-left:50px;
+}#center5_1  img {
+	width:200px;
+	height:auto;
+	margin-bottom:50px;
+}
+
+
+#center6 {
+	float:left;
+	height:432px;
+	width:622px;
+	margin-top:60px;
+	margin-left:auto;
+	margin-right:auto;
+}
+ 
+#center6_1 {
+	float:left;
+	width:700px;
+	margin-top:80px;
+	margin-left:150px;
+}
+
+#center6_1_1 {
+	float:left;
+	width:200px;
+}
+#center6_1_2 {
+	float:left;
+	width:200px;
+	margin-left:50px;
+}
+#center6_1_3 {
+	float:left;
+	width:200px;
+	margin-left:50px;
+}#center6_1  img {
+	width:200px;
+	height:auto;
+	margin-bottom:50px;
+}
+#center7 {
+	float:left;
+	height:432px;
+	width:622px;
+	margin-top:60px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#center7_1 {
+	float:left;
+	width:700px;
+	margin-top:80px;
+	margin-left:150px;
+}
+
+#center7_1_1 {
+	float:left;
+	width:200px;
+}
+#center7_1_2 {
+	float:left;
+	width:200px;
+	margin-left:50px;
+}
+#center7_1_3 {
+	float:left;
+	width:200px;
+	margin-left:50px;
+}#center7_1  img {
+	width:200px;
+	height:auto;
+	margin-bottom:50px;
+}

@@ -1,0 +1,8 @@
+[1026/142819:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[1026/142820:INFO:CONSOLE(544)] "Spaces plugin version: %d.%d.%d", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%20CC%202015/Required/Plug-Ins/Spaces2//www/src/js/main-en.js (544)
+[1026/142821:INFO:CONSOLE(544)] "Startup complete: %dms", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%20CC%202015/Required/Plug-Ins/Spaces2//www/src/js/main-en.js (544)
+[1026/142821:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1026/142821:ERROR:cache_util.cc(132)] Unable to move cache folder C:\Users\Administrator\AppData\Roaming\Adobe\Adobe Photoshop CC 2015\Adobe Photoshop CC 2015 Settings\web-cache-temp to C:\Users\Administrator\AppData\Roaming\Adobe\Adobe Photoshop CC 2015\Adobe Photoshop CC 2015 Settings\old_web-cache-temp_000
+[1026/142821:ERROR:cache_creator.cc(132)] Unable to create cache
+[1026/142828:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[1026/142828:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue
